@@ -19,17 +19,5 @@ public class WebMvcConfig implements WebMvcConfigurer {
 	
 	// 각종 설명정보를 저장하는 곳
 	
-	@Autowired
-	   private  LoginCheckInterceptor   loginCheckInterceptor;
-	   
-	    @Override
-	    public void addInterceptors(InterceptorRegistry registry) {
 
-	       System.out.println("okokok");
-	        registry.addInterceptor( loginCheckInterceptor )
-	                .addPathPatterns("/**")      // http://localhost:9090/
-	                .addPathPatterns("/**/*")    
-	                .excludePathPatterns("/log*","/css/**", "/img/**", "/js/**");
-	        
-	    }
 }

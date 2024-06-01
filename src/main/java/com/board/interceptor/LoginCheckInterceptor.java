@@ -9,7 +9,7 @@ import jakarta.servlet.http.HttpSession;
 
 @Component
 public class LoginCheckInterceptor implements HandlerInterceptor {
-
+/*
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
@@ -41,5 +41,5 @@ public class LoginCheckInterceptor implements HandlerInterceptor {
 		
 		return HandlerInterceptor.super.preHandle(request, response, handler);
 	}
-	
+	*/
 }
